@@ -31,7 +31,7 @@ axios.interceptors.response.use(function(response){
     res.data = response.data
     res.status = response.status
     res.statusText = response.statusText
-    console.log('返回拦截：', res)
+    // console.log('返回拦截：', res)
     return res;
 },function(error){
     //对返回的错误进行一些处理
